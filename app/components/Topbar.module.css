@@ -1,0 +1,52 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: transparent;
+}
+.topbar h1 {
+  flex: 1;
+  font-size: 1.25rem;
+}
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: var(--bg);
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-right: 2rem;
+}
+.search input {
+  background: transparent;
+  border: none;
+  margin-left: 0.5rem;
+  color: var(--text);
+  outline: none;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+.badge {
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  background: var(--accent3);
+  color: var(--bg);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-left: 1rem;
+}

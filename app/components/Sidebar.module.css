@@ -1,0 +1,35 @@
+.sidebar {
+  width: 250px;
+  background: var(--card-bg);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  height: 100vh;
+  border-radius: 6px;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent);
+  margin-bottom: 2rem;
+}
+.menu {
+  list-style: none;
+  flex: 1;
+}
+.menu li {
+  margin-bottom: 1.25rem;
+}
+.menu li a {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+.menu li.active a {
+  color: var(--text);
+  font-weight: 600;
+}
+.logout {
+  margin-top: auto;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
