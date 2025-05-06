@@ -33,6 +33,7 @@ a {
   width: 100vw;
   gap: 2rem;
   padding: 2rem;
+  height: calc(100vh - 68px);
 }
 
 .main-dashboard {

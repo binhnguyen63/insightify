@@ -2,27 +2,27 @@ import styles from "./OverviewCards.module.css";
 
 const cards = [
   {
-    title: "Total Videos Judged",
-    value: "132",
+    title: "Total Search Results",
+    value: "10",
     footer: "View Details →",
     color: "--accent2",
   },
   {
-    title: "Pending Video",
-    value: "35",
-    footer: "+7 New Today",
+    title: "Product Reviews Rating",
+    value: "10/10",
+    footer: "View Details →",
     color: "--accent3",
   },
   {
-    title: "Today's Task",
-    value: "7",
-    footer: "Go to Screening →",
+    title: "Customer Feedback",
+    value: "Good Product",
+    footer: "View Details →",
     color: "--accent",
   },
   {
-    title: "Judging in Progress",
-    value: "2",
-    footer: "View Process",
+    title: "AI Feedback",
+    value: "Better Options",
+    footer: "View Details →",
     color: "--accent2",
   },
 ];

@@ -1,36 +1,22 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
 import Sidebar from "./components/Sidebar";
 import Topbar from "./components/Topbar";
 import OverviewCards from "./components/OverviewCards";
-import PendingVideos from "./components/PendingVideos";
-import Leaderboard from "./components/Leaderboard";
+import { useState } from "react";
+import SearchResult from "./components/searchResult";
+import AiModel from "./components/AiModel";
 export default function Home() {
+  const [query, setQuery] = useState("loreal foundation");
   return (
-    // <div style={{ display: "flex" }}>
-    //   <Sidebar />
-    //   <main style={{ flex: 1, padding: "1rem 2rem" }}>
-    //     <Topbar />
-    //     <OverviewCards />
-    //     {/* <div style={{ display: "flex", gap: "1rem" }}>
-    //       <div style={{ flex: 2 }}>
-    //         <PendingVideos />
-    //       </div>
-    //       <div style={{ flex: 1 }}>
-    //         <Leaderboard />
-    //       </div>
-    //     </div> */}
-    //   </main>
-    // </div>
     <div className="home">
-      <Topbar />
+      <Topbar query={query} setQuery={setQuery} />
       <div className="dashboard">
         <Sidebar />
         <div className="main-dashboard">
           <OverviewCards />
           <div className="pending-leader">
-            <PendingVideos />
-            <Leaderboard />
+            <SearchResult query={query} />
+            <AiModel query={query} />
           </div>
         </div>
       </div>

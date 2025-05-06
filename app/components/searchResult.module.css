@@ -1,7 +1,9 @@
-.pendingVideos {
+.searchResult {
   background: var(--card-bg);
   border-radius: 6px;
   padding: 1rem;
+  overflow-y: auto;
+  height: 586.5px;
 }
 .header {
   display: flex;
@@ -29,9 +31,16 @@
   border-radius: 6px;
   overflow: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
+
+/* wrap every img in the same‐sized box */
 .card img {
   width: 100%;
+  height: 150px; /* pick whatever uniform height you like */
+  object-fit: contain; /* letterboxes/pillarboxes so the whole image shows */
+  background: var(--card-bg);
   display: block;
 }
 .duration {

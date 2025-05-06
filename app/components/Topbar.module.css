@@ -27,7 +27,7 @@
 .icons {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   position: relative;
 }
 .badge {
@@ -48,5 +48,10 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  margin-left: 1rem;
+}
+.searchBtn {
+  background-color: var(--up);
+  padding: 3px 6px;
+  border: none;
+  border-radius: 2px;
 }

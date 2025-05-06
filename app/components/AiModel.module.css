@@ -1,0 +1,73 @@
+.chatSection {
+  background: var(--card-bg);
+  border-radius: 6px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  overflow-y: auto;
+  height: 586.5px;
+}
+
+.heading {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.chatContainer {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.5rem;
+  background: transparent;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.message {
+  max-width: 80%;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+.user {
+  align-self: flex-end;
+  background: var(--accent);
+  color: #fff;
+}
+
+.ai {
+  align-self: flex-start;
+  background: #f0f0f0;
+  color: #333;
+}
+
+.form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.sendButton {
+  padding: 0.5rem 1rem;
+  background: var(--accent2);
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sendButton:hover {
+  opacity: 0.9;
+}
