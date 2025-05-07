@@ -13,7 +13,7 @@ export default function Topbar({ query, setQuery }) {
   };
   return (
     <header className={styles.topbar}>
-      <h1>Shopping Search</h1>
+      <h1>Insightify</h1>
 
       {/* controlled input */}
       <div className={styles.search}>
