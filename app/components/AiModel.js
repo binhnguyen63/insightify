@@ -8,6 +8,14 @@ export default function AiModel({ query = "loreal foundation" }) {
   const [messages, setMessages] = useState([
     { from: "ai", text: `Hello! How can I help you with ${query}?` },
   ]);
+  useEffect(() => {
+    setMessages([
+      {
+        from: "ai",
+        text: `Hello! How can I help you with ${query}?`,
+      },
+    ]);
+  }, [query]);
   const [inputValue, setInputValue] = useState("");
   const [loading, setLoading] = useState(false);
   const endRef = useRef(null);
