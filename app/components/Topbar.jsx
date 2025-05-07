@@ -17,7 +17,6 @@ export default function Topbar({ query, setQuery }) {
 
       {/* controlled input */}
       <div className={styles.search}>
-        <FiSearch />
         <form onSubmit={handleSubmit}>
           <input
             value={inputValue}

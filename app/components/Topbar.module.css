@@ -25,7 +25,7 @@
   border: none;
   margin-left: 0.75rem;
   margin-right: 0.75rem;
-  color: var(--text);
+  color: var(--text-muted);
   outline: none;
   font-size: 1rem;
   padding: 0.5rem 1rem;

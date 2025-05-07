@@ -7,7 +7,9 @@ export default function SearchResult({ query = "loreal foundation" }) {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-
+  function truncate(text, max = 60) {
+    return text.length > max ? text.slice(0, max) + "…" : text;
+  }
   useEffect(() => {
     async function fetchProducts() {
       setLoading(true);
@@ -50,7 +52,7 @@ export default function SearchResult({ query = "loreal foundation" }) {
                 <img src={thumb} alt={item.title} className={styles.thumb} />
               )}
               <div className={styles.meta}>
-                <p className={styles.title}>{item.title}</p>
+                <p className={styles.title}>{truncate(item.title)}</p>
                 <button
                   className={styles.button}
                   onClick={() => window.open(item.image.contextLink, "_blank")}
