@@ -33,6 +33,7 @@
   padding: 0.5rem 1rem;
   border-radius: 4px;
   line-height: 1.4;
+  min-height: 36px;
 }
 
 .user {
