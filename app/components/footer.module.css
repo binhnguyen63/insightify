@@ -1,0 +1,26 @@
+.footer {
+  padding: 1rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footerTitle {
+  font-size: 1rem;
+  background-color: rgb(45, 45, 68);
+  padding: 1rem 2rem;
+  color: var(--text);
+}
+
+.contactIcon {
+  width: 2rem;
+}
+
+.githubIcon {
+  background-color: white;
+  border-radius: 50%;
+}
+.contact {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}

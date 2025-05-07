@@ -5,6 +5,7 @@ import OverviewCards from "./components/OverviewCards";
 import { useState } from "react";
 import SearchResult from "./components/searchResult";
 import AiModel from "./components/AiModel";
+import Footer from "./components/footer";
 export default function Home() {
   const [query, setQuery] = useState("toy");
   return (
@@ -20,6 +21,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
