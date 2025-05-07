@@ -50,7 +50,7 @@ export default function SearchResult({ query = "loreal foundation" }) {
                 <img src={thumb} alt={item.title} className={styles.thumb} />
               )}
               <div className={styles.meta}>
-                <strong className={styles.title}>{item.title}</strong>
+                <p className={styles.title}>{item.title}</p>
                 <button
                   className={styles.button}
                   onClick={() => window.open(item.image.contextLink, "_blank")}

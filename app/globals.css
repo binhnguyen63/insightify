@@ -28,12 +28,10 @@ a {
 }
 
 .dashboard {
-  display: grid;
-  grid-template-columns: auto 1fr;
   width: 100vw;
   gap: 2rem;
-  padding: 2rem;
-  height: calc(100vh - 68px);
+  padding: 2rem 10rem;
+  height: calc(100vh - 82.5px);
 }
 
 .main-dashboard {

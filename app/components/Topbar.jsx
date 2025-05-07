@@ -13,7 +13,7 @@ export default function Topbar({ query, setQuery }) {
   };
   return (
     <header className={styles.topbar}>
-      <h1>Dashboard</h1>
+      <h1>Shopping Search</h1>
 
       {/* controlled input */}
       <div className={styles.search}>
@@ -31,12 +31,12 @@ export default function Topbar({ query, setQuery }) {
         </form>
       </div>
 
-      <div className={styles.icons}>
+      {/* <div className={styles.icons}>
         <FiMessageCircle />
         <div className={styles.badge}>2</div>
         <FiBell />
         <img src="/profile.png" className={styles.avatar} alt="User" />
-      </div>
+      </div> */}
     </header>
   );
 }

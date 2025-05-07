@@ -7,12 +7,12 @@
   margin: 0 auto;
   width: 100%;
   overflow-y: auto;
-  height: 586.5px;
+  height: 632px;
 }
 
 .heading {
   margin: 0 0 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin: 1.5rem 0 0.5rem;
 }
 
@@ -43,7 +43,7 @@
 
 .ai {
   align-self: flex-start;
-  background: #f0f0f0;
+  background: rgb(122, 111, 240);
   color: #333;
 }
 

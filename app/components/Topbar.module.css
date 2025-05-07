@@ -1,12 +1,12 @@
 .topbar {
   display: flex;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 10rem;
   background: transparent;
 }
 .topbar h1 {
   flex: 1;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 .search {
   position: relative;
@@ -16,6 +16,7 @@
   padding: 0.5rem;
   border-radius: 4px;
   margin-right: 2rem;
+  font-size: 1.5rem;
 }
 .search input {
   background: transparent;
@@ -23,12 +24,30 @@
   margin-left: 0.5rem;
   color: var(--text);
   outline: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
 }
+
+.search button {
+  font-size: 1rem;
+  padding: 0.25rem 1rem;
+  border-radius: 6px;
+  color: white;
+  background-color: rgb(78, 204, 163);
+  border: none;
+}
+
+.search button:hover {
+  background-color: var(--up);
+  cursor: pointer;
+}
+
 .icons {
   display: flex;
   align-items: center;
   gap: 2rem;
   position: relative;
+  height: 2rem;
 }
 .badge {
   position: absolute;
@@ -39,7 +58,6 @@
   border-radius: 50%;
   width: 16px;
   height: 16px;
-  font-size: 0.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,9 +67,9 @@
   height: 36px;
   border-radius: 50%;
 }
-.searchBtn {
-  background-color: var(--up);
+/* .searchBtn {
+
   padding: 3px 6px;
   border: none;
   border-radius: 2px;
-}
+} */

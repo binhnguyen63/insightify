@@ -6,14 +6,14 @@ import { useState } from "react";
 import SearchResult from "./components/searchResult";
 import AiModel from "./components/AiModel";
 export default function Home() {
-  const [query, setQuery] = useState("loreal foundation");
+  const [query, setQuery] = useState("toy");
   return (
     <div className="home">
       <Topbar query={query} setQuery={setQuery} />
       <div className="dashboard">
-        <Sidebar />
+        {/* <Sidebar /> */}
         <div className="main-dashboard">
-          <OverviewCards />
+          <OverviewCards query={query} />
           <div className="pending-leader">
             <SearchResult query={query} />
             <AiModel query={query} />
