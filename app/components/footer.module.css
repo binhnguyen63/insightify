@@ -1,8 +1,9 @@
 .footer {
   padding: 1rem 10rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 .footerTitle {
   font-size: 1rem;
@@ -23,4 +24,8 @@
   display: flex;
   gap: 1rem;
   align-items: center;
+  justify-content: center;
+  background-color: var(--accent);
+  padding: 0.4rem 2rem;
+  width: 221.43px;
 }
